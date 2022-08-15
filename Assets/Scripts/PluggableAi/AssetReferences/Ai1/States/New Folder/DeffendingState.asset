@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0301b003655e21b4ea1e95dc89b2d57b, type: 3}
+  m_Name: DeffendingState
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: 3ed76b68623a8b3419f4ddea4069ced3, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: 264a5133e15a1354288177f1f0f056bc, type: 2}
+    trueState: {fileID: 11400000}
+    falseState: {fileID: 11400000, guid: 387a4e2cea068db468c156a63c383153, type: 2}
+  sceneGezmoColor: {r: 0.49250337, g: 0.6415094, b: 0.23239583, a: 1}

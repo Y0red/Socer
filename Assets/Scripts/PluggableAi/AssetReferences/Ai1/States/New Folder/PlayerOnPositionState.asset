@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0301b003655e21b4ea1e95dc89b2d57b, type: 3}
+  m_Name: PlayerOnPositionState
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: add71d6ce86a80e4b82807ad9445ce1f, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: 4720c4d165cc32d45b2c3edf63f81a03, type: 2}
+    trueState: {fileID: 11400000, guid: 387a4e2cea068db468c156a63c383153, type: 2}
+    falseState: {fileID: 11400000, guid: d2336387d6313ab45ab2cbace30f16e2, type: 2}
+  - decision: {fileID: 11400000, guid: b60ccd5007fe2fc42900a69c0ac25d98, type: 2}
+    trueState: {fileID: 11400000, guid: fbf85fc43d07984418c69232644d06d7, type: 2}
+    falseState: {fileID: 11400000, guid: d2336387d6313ab45ab2cbace30f16e2, type: 2}
+  sceneGezmoColor: {r: 0.2881317, g: 0, b: 1, a: 1}
