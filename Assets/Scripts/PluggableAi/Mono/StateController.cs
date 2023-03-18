@@ -26,6 +26,8 @@ public class StateController : MonoBehaviour
     public bool isAttacking = false;
     public bool isDefending = false;
     public bool isSupportingAttack = false;
+    public bool isGetingOnPosition = false;
+    public bool isChassing = false;
 
     public void SetuupAi(List<Transform> waypoints)
     {

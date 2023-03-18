@@ -11,6 +11,7 @@ public class PatrolAction : AbstractAction
 
     private void Patrol(StateController controller)
     {
+        controller.isGetingOnPosition = true;
         //controller.isPatrolling = false;
         if(controller.navMeshAgent.agent.remainingDistance <= controller.navMeshAgent.agent.stoppingDistance && !controller.navMeshAgent.agent.pathPending)
         {
@@ -26,10 +27,12 @@ public class PatrolAction : AbstractAction
             controller.navMeshAgent.agent.isStopped = false;
             //attacking
             controller.isAttacking = true;
+            controller.isGetingOnPosition = false;
         }
         else
         {
             controller.isAttacking = false;
+            controller.isGetingOnPosition = true;
             controller.navMeshAgent.SetTarget(controller.waypointsAll[controller.nextWaypoint]);
             controller.navMeshAgent.agent.isStopped = false;
         }

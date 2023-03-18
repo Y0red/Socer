@@ -20,12 +20,14 @@ public class ChaseAction : AbstractAction
             {
                 //deffending
                 controller.isDefending = true;
+                controller.isChassing = false;
             }
             else if(ball.hasPlayer() && ball.GetHolderPlayer() != controller.aiController && ball.GetHolderPlayer().currentPlayerTeam == controller.aiController.currentPlayerTeam)
             {
                 // DoSupportTeamMet();
 
                     controller.isSupportingAttack = true;
+                controller.isChassing = false;
             
             }
             else if(ball.hasPlayer() && ball.GetHolderPlayer() == controller.aiController && ball.GetHolderPlayer().currentPlayerTeam == controller.aiController.currentPlayerTeam)
@@ -34,6 +36,7 @@ public class ChaseAction : AbstractAction
                controller.navMeshAgent.agent.isStopped = false;
                 //attacking
                controller.isAttacking = true;
+                controller.isChassing = false;
             }
         }
         else
@@ -42,6 +45,7 @@ public class ChaseAction : AbstractAction
             {
                 controller.navMeshAgent.agent.destination = controller.chaseTarget.transform.position;
                 controller.navMeshAgent.agent.isStopped = false;
+                controller.isChassing = true;
             }
         }
         
